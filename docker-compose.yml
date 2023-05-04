@@ -44,8 +44,8 @@ services:
     ports:
       - "3306:3306"
     environment:
-      MYSQL_DATABASE: myDatabase #Insert the name for you database
-      MYSQL_ROOT_PASSWORD: myPassword #Insert the root password for you database
+      MYSQL_DATABASE: ${DB_DATABASE} #Insert the name for you database
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD} #Insert the root password for you database
       SERVICE_TAGS: dev
       SERVICE_NAME: mysql
     volumes:
